@@ -1,4 +1,4 @@
-console.log("Hello World");
+// console.log("Hello World");
 
 // Global Scope
 
@@ -19,10 +19,37 @@ console.log("Hello World");
 // someFunction();
 
 // Hoisting in JavaScript
-console.log(age);
-var age = 20;
+// console.log(age);
+// var age = 20;
 
-hoist();
-function hoist() {
-  console.log("Hello World");
-}
+// hoist();
+// function hoist() {
+//   console.log("Hello World");
+// }
+
+/* Closures */
+
+// const outer = () => {
+//   const outerVar = "Hello World!";
+
+//   const inner = () => {
+//     const innerVar = "Hi!";
+//     console.log(outerVar, innerVar);
+//   };
+//   console.log(outerVar);
+//   return inner;
+// };
+// const innerFunc = outer();
+// innerFunc();
+// console.log(outerVar);
+// outer();
+
+const init = () => {
+  const hobby = "Learning JavaScript";
+  const displayHobby = () => {
+    console.log(hobby);
+  };
+  return displayHobby;
+};
+const myFunc = init();
+myFunc();
