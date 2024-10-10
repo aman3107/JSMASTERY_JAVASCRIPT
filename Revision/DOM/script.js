@@ -52,14 +52,14 @@ console.log("Hello World");
 // console.log(body.appendChild(heading));
 // heading.innerText = "hello world";
 
-const subjects = document.querySelector(".subjects");
-console.log(subjects);
-console.log(subjects.firstElementChild);
-console.log(subjects.lastElementChild);
+// const subjects = document.querySelector(".subjects");
+// console.log(subjects);
+// console.log(subjects.firstElementChild);
+// console.log(subjects.lastElementChild);
 
-const favSubject = document.querySelector(".fav-subject");
-console.log(favSubject);
-console.log(favSubject.previousElementSibling);
-console.log(favSubject.nextElementSibling);
+// const favSubject = document.querySelector(".fav-subject");
+// console.log(favSubject);
+// console.log(favSubject.previousElementSibling);
+// console.log(favSubject.nextElementSibling);
 
-favSubject.remove();
+// favSubject.remove();
